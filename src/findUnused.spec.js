@@ -11,7 +11,10 @@ describe('#findUnused()', () => {
           key1: 'Key 1',
           key2: 'Key 2',
         },
-        [{ key: 'key1', loc: null }, { key: 'key2', loc: null }],
+        [
+          { key: 'key1', loc: null },
+          { key: 'key2', loc: null },
+        ],
       );
 
       assert.deepEqual([], unused, 'Should report zero unused key.');
@@ -24,7 +27,10 @@ describe('#findUnused()', () => {
           key2: 'Key 2',
           key3: 'Key 3',
         },
-        [{ key: 'key1', loc: null }, { key: 'key2', loc: null }],
+        [
+          { key: 'key1', loc: null },
+          { key: 'key2', loc: null },
+        ],
       );
 
       assert.deepEqual(
@@ -101,7 +107,10 @@ describe('#findUnused()', () => {
           'foo.key1': 'Key 1',
           'foo.key2': 'Key 2',
         },
-        [{ key: '*', loc: null }, { key: 'foo.key1', loc: null }],
+        [
+          { key: '*', loc: null },
+          { key: 'foo.key1', loc: null },
+        ],
       );
 
       assert.deepEqual(

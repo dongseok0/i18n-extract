@@ -30,7 +30,10 @@ describe('#forbidDynamic()', () => {
     });
 
     it('should no report static key', () => {
-      const missing = forbidDynamic({}, [{ key: 'key1', loc: null }, { key: 'key2', loc: null }]);
+      const missing = forbidDynamic({}, [
+        { key: 'key1', loc: null },
+        { key: 'key2', loc: null },
+      ]);
 
       assert.deepEqual([], missing, 'Should not report static key.');
     });

@@ -11,7 +11,11 @@ describe('#findMissing()', () => {
           key1: 'Key 1',
           key2: 'Key 2',
         },
-        [{ key: 'key1', loc: null }, { key: 'key2', loc: null }, { key: 'key3', loc: null }],
+        [
+          { key: 'key1', loc: null },
+          { key: 'key2', loc: null },
+          { key: 'key3', loc: null },
+        ],
       );
 
       assert.deepEqual(
